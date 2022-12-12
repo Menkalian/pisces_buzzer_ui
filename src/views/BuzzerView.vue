@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import RedButton from "@/components/RedButton.vue";
 import config from "@/config";
-import { showError } from "@/utils/io";
+import { showError, showToast } from "@/utils/io";
 import axios from "axios";
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
@@ -24,6 +24,11 @@ const handleClick = async () => {
 
   try {
     await axios.get(`buzzer/${buzzerId.value}`, { baseURL: config.api.host });
+    showToast({
+      message: t("pages.buzzer.success"),
+      duration: 2000,
+      type: "success",
+    });
   } catch (e) {
     console.error(e);
     showError(e as Error);

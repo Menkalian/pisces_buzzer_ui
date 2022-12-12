@@ -4,7 +4,8 @@
       "toBuzzer": "Zum Buzzer"
     },
     "buzzer": {
-      "buttonText": "BONK!"
+      "buttonText": "BONK!",
+      "success": "Erfolgreich geBONKt!"
     }
   }
 }
