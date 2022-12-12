@@ -11,7 +11,7 @@ config;
 </script>
 
 <template>
-  <div>
+  <div class="page__content">
     <el-button
       v-if="config.app.defaultBuzzerId"
       type="primary"

@@ -1,0 +1,19 @@
+@use "mixins" as *;
+
+.page {
+  &__content {
+    padding: 32px;
+    height: calc(100vh - 2 * 32px);
+
+    @include breakpoint(s) {
+      padding: 16px;
+      height: calc(100vh - 2 * 16px);
+    }
+  }
+
+  &--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

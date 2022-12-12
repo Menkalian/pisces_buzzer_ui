@@ -24,8 +24,13 @@ const handleClick = () => {
 .btn {
   --base-color: 255, 0, 64;
 
-  width: 150px;
-  height: 150px;
+  $size: 150px;
+
+  width: $size;
+  height: $size;
+  min-width: $size;
+  min-height: $size;
+
   background: rgba(var(--base-color), 1);
   border-radius: 50%;
   color: #fff;

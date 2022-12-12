@@ -39,20 +39,15 @@ const handleClick = async () => {
 </script>
 
 <template>
-  <div class="page">
-    <RedButton
-      @click="handleClick"
-      :text="t('pages.buzzer.buttonText')"
-      :disabled="isLoading"
-    />
+  <div>
+    <div class="page__content page--center">
+      <RedButton
+        @click="handleClick"
+        :text="t('pages.buzzer.buttonText')"
+        :disabled="isLoading"
+      />
+    </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-.page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-</style>
+<style lang="scss" scoped></style>
