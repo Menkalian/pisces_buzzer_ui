@@ -1,5 +1,8 @@
 {
   "pages": {
+    "home": {
+      "toBuzzer": "Zum Buzzer"
+    },
     "buzzer": {
       "buttonText": "Buzzern!"
     }

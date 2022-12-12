@@ -1,13 +1,18 @@
+import HomeView from "@/views/HomeView.vue";
 import { createRouter, createWebHistory } from "vue-router";
-import BuzzerView from "../views/BuzzerView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: "/",
+      name: "home",
+      component: HomeView,
+    },
+    {
       path: "/buzzer/:id",
       name: "buzzer",
-      component: BuzzerView,
+      component: () => import("@/views/BuzzerView.vue"),
     },
   ],
 });

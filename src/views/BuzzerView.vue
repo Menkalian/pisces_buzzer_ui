@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import RedButton from "@/components/RedButton.vue";
 import config from "@/config";
+import { showError } from "@/utils/io";
 import axios from "axios";
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
@@ -25,6 +26,7 @@ const handleClick = async () => {
     await axios.get(`buzzer/${buzzerId.value}`, { baseURL: config.api.host });
   } catch (e) {
     console.error(e);
+    showError(e as Error);
   } finally {
     isLoading.value = false;
   }
