@@ -1,0 +1,11 @@
+{
+  "pages": {
+    "home": {
+      "toBuzzer": "Zum Buzzer"
+    },
+    "buzzer": {
+      "buttonText": "BONK!",
+      "success": "Erfolgreich geBONKt!"
+    }
+  }
+}

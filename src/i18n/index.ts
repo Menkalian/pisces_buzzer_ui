@@ -4,8 +4,8 @@ import datetimeFormats from "./datetime-formats";
 import numberFormats from "./number-formats";
 
 const i18n = createI18n({
-  locale: "en",
-  fallbackLocale: "en",
+  locale: "de",
+  fallbackLocale: "de",
   messages,
   numberFormats,
   datetimeFormats,
