@@ -1,5 +1,5 @@
 {
-  "name": "template-vue",
+  "name": "picses-buzzer-ui",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
