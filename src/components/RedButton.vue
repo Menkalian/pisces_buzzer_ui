@@ -60,6 +60,7 @@ const handleClick = () => {
 
   &:active {
     background: rgb(var(--base-color), 0.8);
+    transform: translateY(4px);
   }
 
   &--disabled {
