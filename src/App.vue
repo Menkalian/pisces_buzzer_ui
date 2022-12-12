@@ -1,5 +1,9 @@
 <script lang="ts" setup>
+import { useDark } from "@vueuse/core";
 import { RouterView } from "vue-router";
+
+// auto dark mode
+useDark();
 </script>
 
 <template>
@@ -9,5 +13,5 @@ import { RouterView } from "vue-router";
 </template>
 
 <style lang="scss">
-@import "@/styles/index.scss";
+@use "@/styles/index.scss";
 </style>
