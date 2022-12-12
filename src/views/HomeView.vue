@@ -1,13 +1,25 @@
 <script lang="ts" setup>
-import HelloWorld from "@/components/HelloWorld.vue";
+import config from "@/config";
+import { ElButton } from "element-plus";
 import { useI18n } from "vue-i18n";
+import { useRouter } from "vue-router";
 
 const { t } = useI18n();
+const router = useRouter();
+
+config;
 </script>
 
 <template>
-  <div>
-    <HelloWorld :msg="t('message')" />
+  <div class="page__content">
+    <el-button
+      v-if="config.app.defaultBuzzerId"
+      type="primary"
+      plain
+      @click="router.push(`/buzzer/${config.app.defaultBuzzerId}`)"
+    >
+      {{ t("pages.home.toBuzzer") }}
+    </el-button>
   </div>
 </template>
 

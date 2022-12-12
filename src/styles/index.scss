@@ -1,7 +1,10 @@
+@use "mixins";
+@use "variables";
+@use "layouts";
 @import "@fontsource/open-sans/latin";
-@import "mixins";
 
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
+  background-color: var(--app-color-background);
 }
